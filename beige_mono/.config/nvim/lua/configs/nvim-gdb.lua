@@ -1,3 +1,0 @@
-local options = {}
-
-return options
