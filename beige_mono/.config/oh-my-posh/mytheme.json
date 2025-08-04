@@ -5,7 +5,7 @@
       "alignment": "left",
       "segments": [
         {
-          "background": "#1a1a1a",
+          "background": "#2a2a2a",
           "foreground": "#ffffff",
           "leading_diamond": " \ue0b6",
           "trailing_diamond": "\ue0b4",
@@ -18,7 +18,7 @@
         },
         {
           "background": "#3ca57a",
-          "foreground": "#1a1a1a",
+          "foreground": "#2a2a2a",
           "background_templates": [
             "{{ if or (.Working.Changed) (.Staging.Changed) }}#bd8b63{{ end }}",
             "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#81a98e{{ end }}",
@@ -33,11 +33,11 @@
             "fetch_upstream_icon": true
           },
           "style": "diamond",
-          "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }}<#1a1a1a> \uf046 {{ .Staging.String }}</>{{ end }} ",
+          "template": "  {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }}<#2a2a2a> \uf046 {{ .Staging.String }}</>{{ end }} ",
           "type": "git"
         },
         {
-          "background": "#1a1a1a",
+          "background": "#2a2a2a",
           "foreground": "#f5f5f5",
           "properties": {
             "style": "roundrock",
@@ -56,13 +56,13 @@
       "alignment": "right",
       "segments": [
         {
-          "background": "#bd8b63",
+          "background": "#3ca57a",
           "foreground": "#2a2a2a",
           "leading_diamond": "\ue0b6",
           "properties": {
             "fetch_package_manager": true,
-            "npm_icon": " <#ca6f80>\ue5fa</> ",
-            "yarn_icon": " <#bd8b63>\ue6a7</>"
+            "npm_icon": " <#2a2a2a>\ue5fa</> ",
+            "yarn_icon": " <#3ca57a>\ue6a7</>"
           },
           "style": "diamond",
           "template": "<b>\ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }}</b>",
@@ -70,7 +70,7 @@
           "type": "node"
         },
         {
-          "background": "#bd8b63",
+          "background": "#3ca57a",
           "foreground": "#2a2a2a",
           "leading_diamond": "\ue0b6",
           "style": "diamond",
@@ -79,7 +79,7 @@
           "type": "python"
         },
         {
-          "background": "#bd8b63",
+          "background": "#3ca57a",
           "foreground": "#2a2a2a",
           "leading_diamond": "\ue0b6",
           "style": "diamond",
@@ -88,7 +88,7 @@
           "type": "java"
         },
         {
-          "background": "#bd8b63",
+          "background": "#3ca57a",
           "foreground": "#2a2a2a",
           "leading_diamond": "\ue0b6",
           "style": "diamond",
@@ -97,7 +97,7 @@
           "type": "dotnet"
         },
         {
-          "background": "#bd8b63",
+          "background": "#3ca57a",
           "foreground": "#2a2a2a",
           "leading_diamond": "\ue0b6",
           "style": "diamond",
@@ -106,7 +106,7 @@
           "type": "go"
         },
         {
-          "background": "#bd8b63",
+          "background": "#3ca57a",
           "foreground": "#2a2a2a",
           "leading_diamond": "\ue0b6",
           "style": "diamond",
@@ -115,7 +115,7 @@
           "type": "rust"
         },
         {
-          "background": "#bd8b63",
+          "background": "#3ca57a",
           "foreground": "#2a2a2a",
           "leading_diamond": " \ue0b6",
           "style": "diamond",
@@ -124,7 +124,7 @@
           "type": "dart"
         },
         {
-          "background": "#bd8b63",
+          "background": "#3ca57a",
           "foreground": "#2a2a2a",
           "leading_diamond": " \ue0b6",
           "style": "diamond",
@@ -133,7 +133,7 @@
           "type": "angular"
         },
         {
-          "background": "#bd8b63",
+          "background": "#3ca57a",
           "foreground": "#2a2a2a",
           "leading_diamond": " \ue0b6",
           "style": "diamond",
@@ -142,7 +142,7 @@
           "type": "aurelia"
         },
         {
-          "background": "#bd8b63",
+          "background": "#3ca57a",
           "foreground": "#2a2a2a",
           "leading_diamond": " \ue0b6",
           "style": "diamond",
@@ -151,7 +151,7 @@
           "type": "nx"
         },
         {
-          "background": "#bd8b63",
+          "background": "#3ca57a",
           "foreground": "#2a2a2a",
           "leading_diamond": " \ue0b6",
           "style": "diamond",
@@ -160,7 +160,7 @@
           "type": "julia"
         },
         {
-          "background": "#bd8b63",
+          "background": "#3ca57a",
           "foreground": "#2a2a2a",
           "leading_diamond": "\ue0b6",
           "style": "diamond",
@@ -169,7 +169,7 @@
           "type": "ruby"
         },
         {
-          "background": "#bd8b63",
+          "background": "#3ca57a",
           "foreground": "#2a2a2a",
           "leading_diamond": "\ue0b6",
           "style": "diamond",
@@ -178,7 +178,7 @@
           "type": "azfunc"
         },
         {
-          "background": "#bd8b63",
+          "background": "#3ca57a",
           "foreground": "#2a2a2a",
           "leading_diamond": "\ue0b6",
           "style": "diamond",
@@ -187,7 +187,7 @@
           "type": "aws"
         },
         {
-          "background": "#bd8b63",
+          "background": "#3ca57a",
           "foreground": "#2a2a2a",
           "leading_diamond": "\ue0b6",
           "style": "diamond",
@@ -196,7 +196,7 @@
           "type": "kubectl"
         },
         {
-          "background": "#1a1a1a",
+          "background": "#2a2a2a",
           "foreground": "#ffffff",
           "leading_diamond": "\ue0b6",
           "properties": {
@@ -210,7 +210,7 @@
           "type": "os"
         },
         {
-          "background": "#1a1a1a",
+          "background": "#2a2a2a",
           "foreground": "#ffffff",
           "invert_powerline": true,
           "leading_diamond": " \ue0b6",
@@ -230,7 +230,7 @@
       "newline": true,
       "segments": [
         {
-          "foreground": "#1a1a1a",
+          "foreground": "#2a2a2a",
           "foreground_templates": ["{{ if gt .Code 0 }}#ca6f80{{ end }}"],
           "properties": {
             "always_enabled": true
