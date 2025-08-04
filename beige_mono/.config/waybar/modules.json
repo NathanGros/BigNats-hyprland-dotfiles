@@ -75,7 +75,7 @@
 
   // Logout menu
   "custom/wlogout": {
-    "format": "⏻",
+    "format": "",
     "on-click": "wlogout",
     "tooltip-format": "Toggle logout menu"
   },
@@ -97,7 +97,7 @@
 
   // Memory
   "memory": {
-    "format": " {}%",
+    "format": "󰒋 {}%",
     "tooltip-format": " {used} / {total}Gib RAM used",
     "interval": 5,
     "on-click": "foot -T btop -e btop",
@@ -107,7 +107,7 @@
 
   // CPU
   "cpu": {
-    "format": " {usage}%",
+    "format": "  {usage}%",
     "interval": 1,
     "on-click": "foot -T btop -e btop",
     "min-length": 7,
@@ -117,12 +117,12 @@
   // Network
   "network": {
     "format": "{ifname}",
-    "format-wifi": " {signalStrength}% {essid}",
+    "format-wifi": "   {signalStrength}% {essid}",
     "format-ethernet": "  {ifname}",
-    "format-disconnected": "✈ Disconnected",
-    "tooltip-format": " {ifname} via {gwaddri}",
-    "tooltip-format-wifi": "  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\nUp: {bandwidthUpBits}\nClick to toggle wifi selector",
-    "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}\n up: {bandwidthUpBits} down: {bandwidthDownBits}",
+    "format-disconnected": "  Disconnected",
+    "tooltip-format": "  {ifname} via {gwaddri}",
+    "tooltip-format-wifi": "   {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\nUp: {bandwidthUpBits}\nClick to toggle wifi selector",
+    "tooltip-format-ethernet": "  {ifname}\nIP: {ipaddr}\n up: {bandwidthUpBits} down: {bandwidthDownBits}",
     "tooltip-format-disconnected": "AirPlane mode",
     "on-click": "~/.config/hypr/scripts/wifilist_toggle.sh",
     "interval": 5,
@@ -186,12 +186,12 @@
   },
 
   "wireplumber": {
-    "format": "{icon} {volume}%",
+    "format": "{icon}  {volume}%",
     "format-muted": "  mute",
     "tooltip-format": "{node_name} at {volume}%",
     "scroll-step": "5.0",
     "max-volume": "100.0",
-    "format-icons": ["", "", "", ""],
+    "format-icons": ["", "", " ", " "],
     "min-length": 7,
     "max-length": 7,
     "scroll-step": 5

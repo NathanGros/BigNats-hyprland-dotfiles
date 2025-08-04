@@ -10,23 +10,23 @@
 * ----------------------------------------------------- */
 
 * {
-  font-family: Roboto, Noto, "Font Awesome 6 Free", FontAwesome;
-  border: none;
-  border-radius: 0px;
+    font-family: Roboto, Noto, "Font Awesome 6 Free", FontAwesome;
+    border: none;
+    border-radius: 0px;
 }
 
 window#waybar {
-  background-color: transparent;
-  opacity: 1;
-  transition-property: transparent;
-  transition-duration: .3s;
+    background-color: transparent;
+    opacity: 1;
+    transition-property: transparent;
+    transition-duration: .3s;
 }
 
-window#waybar > box {
-  border-radius: 10px;
-  margin: 2px 9px 8px 2px;
-  box-shadow: 3px 3px 2px 3px #808080;
-  background-color: @main-color;
+window#waybar>box {
+    border-radius: 10px;
+    margin: 2px 9px 8px 2px;
+    box-shadow: 3px 3px 2px 3px #808080;
+    background-color: @main-color;
 }
 
 /* -----------------------------------------------------
@@ -34,26 +34,26 @@ window#waybar > box {
 * ----------------------------------------------------- */
 
 tooltip {
-  opacity: 1;
-  background-color: transparent;
-  padding: 0px;
-  margin: 0px;
+    opacity: 1;
+    background-color: transparent;
+    padding: 0px;
+    margin: 0px;
 }
 
 tooltip label {
-  font-size: 15px;
-  font-style: normal;
-  font-weight: normal;
-  padding: 0px;
-  margin: 5px;
-  color: @dark-color;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: normal;
+    padding: 0px;
+    margin: 5px;
+    color: @dark-color;
 }
 
-tooltip > box {
-  border-radius: 7px;
-  margin: 2px 9px 8px 2px;
-  box-shadow: 5px 5px 2px 1px #808080;
-  background-color: @main-color;
+tooltip>box {
+    border-radius: 7px;
+    margin: 2px 9px 8px 2px;
+    box-shadow: 5px 5px 2px 1px #808080;
+    background-color: @main-color;
 }
 
 /* -----------------------------------------------------
@@ -61,89 +61,89 @@ tooltip > box {
 * ----------------------------------------------------- */
 
 #workspaces {
-  opacity: 1;
-  padding: 0px 5px;
-  margin: 5px 0px 6px 0px;
-  border-radius: 7px;
-  font-size: 0px;
-  transition: background-color 0.1s ease-in;
-  background-color: @transparent;
+    opacity: 1;
+    padding: 0px 5px;
+    margin: 5px 0px 6px 0px;
+    border-radius: 7px;
+    font-size: 0px;
+    transition: background-color 0.1s ease-in;
+    background-color: @transparent;
 }
 
 #workspaces button {
-  opacity: 1;
-  margin: 0px;
-  padding: 0px 7px;
-  border-radius: 5px;
-  font-size: 0px;
-  min-height: 0px;
-  min-width: 0px;
-  transition: all 0.2s linear;
-  transition: background-color 0.1s ease-in;
-  background-color: @transparent;
+    opacity: 1;
+    margin: 0px;
+    padding: 0px 7px;
+    border-radius: 5px;
+    font-size: 0px;
+    min-height: 0px;
+    min-width: 0px;
+    transition: all 0.2s linear;
+    transition: background-color 0.1s ease-in;
+    background-color: @transparent;
 }
 
-#workspaces button > box {
-  margin: 7px 0px;
-  padding: 0px 6px;
-  border-radius: 10px;
-  transition: background-color 0.1s ease-in;
-  background-color: @dark-color;
+#workspaces button>box {
+    margin: 7px 0px;
+    padding: 0px 6px;
+    border-radius: 10px;
+    transition: background-color 0.1s ease-in;
+    background-color: @dark-color;
 }
 
 #workspaces button.active {
-  padding: 0px 7px;
-  margin: 0px;
-  transition: background-color 0.1s ease-in;
-  background-color: @transparent;
+    padding: 0px 7px;
+    margin: 0px;
+    transition: background-color 0.1s ease-in;
+    background-color: @transparent;
 }
 
-#workspaces button.active > box {
-  margin: 6px 0px;
-  padding: 0px 15px;
-  border-radius: 10px;
-  transition: background-color 0.1s ease-in;
-  background-color: @dark-color;
+#workspaces button.active>box {
+    margin: 6px 0px;
+    padding: 0px 15px;
+    border-radius: 10px;
+    transition: background-color 0.1s ease-in;
+    background-color: @dark-color;
 }
 
 #workspaces button.special {
-  margin: 0px;
-  padding: 0px 6px;
-  border-radius: 5px;
-  min-height: 0px;
-  min-width: 0px;
-  font-size: 0px;
-  transition: background-color 0s ease-in;
-  background-color: @transparent;
+    margin: 0px;
+    padding: 0px 6px;
+    border-radius: 5px;
+    min-height: 0px;
+    min-width: 0px;
+    font-size: 0px;
+    transition: background-color 0s ease-in;
+    background-color: @transparent;
 }
 
-#workspaces button.special > box {
-  margin: 5px 0px;
-  padding: 0px 8px;
-  border-radius: 10px;
-  transition: background-color 0.1s ease-in;
-  background-color: @dark-color;
+#workspaces button.special>box {
+    margin: 5px 0px;
+    padding: 0px 8px;
+    border-radius: 10px;
+    transition: background-color 0.1s ease-in;
+    background-color: @dark-color;
 }
 
 #workspaces button.special.active {
-  margin: 0px 0px;
-  padding: 0px 8px;
-  border-radius: 30px;
-  transition: background-color 0.1s ease-in;
-  background-color: @dark-color;
+    margin: 0px 0px;
+    padding: 0px 8px;
+    border-radius: 30px;
+    transition: background-color 0.1s ease-in;
+    background-color: @dark-color;
 }
 
-#workspaces button.special.active > box {
-  margin: 7px 0px;
-  padding: 0px 6px;
-  border-radius: 30px;
-  transition: background-color 0.1s ease-in;
-  background-color: @main-color;
+#workspaces button.special.active>box {
+    margin: 7px 0px;
+    padding: 0px 6px;
+    border-radius: 30px;
+    transition: background-color 0.1s ease-in;
+    background-color: @main-color;
 }
 
 #workspaces button:hover {
-  transition: background-color 0.1s ease-in;
-  background-color: #cbc2b9;
+    transition: background-color 0.1s ease-in;
+    background-color: #cbc2b9;
 }
 
 /* -----------------------------------------------------
@@ -151,38 +151,38 @@ tooltip > box {
 * ----------------------------------------------------- */
 
 #tray {
-  opacity: 1;
-  padding: 3px;
-  margin: 5px 11px 5px 0px;
-  border-radius: 7px;
-  font-size: 17px;
-  font-weight: bold;
-  transition: background-color 0.1s ease-in;
-  background-color: @dark-color;
-  color: @light-color;
+    opacity: 1;
+    padding: 3px;
+    margin: 5px 11px 5px 0px;
+    border-radius: 7px;
+    font-size: 17px;
+    font-weight: bold;
+    transition: background-color 0.1s ease-in;
+    background-color: @dark-color;
+    color: @light-color;
 }
 
-#tray > * {
-  margin: 0px;
-  border-radius: 5px;
-  padding: 0px 5px;
-  transition: background-color 0.1s ease-in;
-  background-color: @dark-color;
+#tray>* {
+    margin: 0px;
+    border-radius: 5px;
+    padding: 0px 5px;
+    transition: background-color 0.1s ease-in;
+    background-color: @dark-color;
 }
 
-#tray > *:hover {
-  margin: 0px;
-  border-radius: 5px;
-  padding: 0px 5px;
-  transition: background-color 0.1s ease-in;
-  background-color: @main-light-color;
+#tray>*:hover {
+    margin: 0px;
+    border-radius: 5px;
+    padding: 0px 5px;
+    transition: background-color 0.1s ease-in;
+    background-color: @main-light-color;
 }
 
 #tray.empty {
-  background: transparent;
-  border: 0;
-  padding: 0;
-  margin: 0;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    margin: 0;
 }
 
 /* -----------------------------------------------------
@@ -190,92 +190,112 @@ tooltip > box {
  * ----------------------------------------------------- */
 
 #taskbar {
-  opacity: 1;
-  padding: 3px;
-  margin: 3px 0px;
-  border-radius: 7px;
-  font-size: 10px;
-  font-weight: normal;
-  transition: background-color 0.1s ease-in;
-  background-color: @dark-color;
-  color: @light-color;
+    opacity: 1;
+    padding: 3px;
+    margin: 3px 0px;
+    border-radius: 7px;
+    font-size: 10px;
+    font-weight: normal;
+    transition: background-color 0.1s ease-in;
+    background-color: @dark-color;
+    color: @light-color;
 }
 
 #taskbar button {
-  margin: 0px;
-  border-radius: 5px;
-  padding: 0px 4px;
-  transition: background-color 0.1s ease-in;
-  background-color: @dark-color;
+    margin: 0px;
+    border-radius: 5px;
+    padding: 0px 4px;
+    transition: background-color 0.1s ease-in;
+    background-color: @dark-color;
+}
+
+#taskbar button.active {
+    margin: 0px;
+    border-radius: 5px;
+    padding: 0px 4px;
+    transition: background-color 0.1s ease-in;
+    background-color: @main-color;
 }
 
 #taskbar button:hover {
-  margin: 0px;
-  border-radius: 5px;
-  padding: 0px;
-  transition: background-color 0.1s ease-in;
-  background-color: transparent;
+    margin: 0px;
+    border-radius: 5px;
+    padding: 0px;
+    transition: background-color 0.1s ease-in;
+    background-color: transparent;
 }
 
-#taskbar button:hover > box {
-  margin: 0px;
-  border-radius: 5px;
-  padding: 0px 4px;
-  transition: background-color 0.1s ease-in;
-  background-color: @main-light-color;
+#taskbar button:hover>box {
+    margin: 0px;
+    border-radius: 5px;
+    padding: 0px 4px;
+    transition: background-color 0.1s ease-in;
+    background-color: @main-light-color;
 }
 
 #taskbar.empty {
-  border: 0;
-  padding: 0;
-  margin: 0;
-  background: transparent;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background: transparent;
 }
 
 /* -----------------------------------------------------
 * Main modules
 * ----------------------------------------------------- */
 
-#custom-menu,#custom-clipboard,#clock,#custom-screenshot,#network,#custom-updates,#custom-wlogout {
-  opacity: 1;
-  border-radius: 7px;
-  font-size: 17px;
-  font-weight: bold;
-  transition: all 0.1s ease-in;
-  background-color: @dark-color;
-  color: @light-color;
+#custom-menu,
+#custom-clipboard,
+#clock,
+#custom-screenshot,
+#network,
+#custom-updates,
+#custom-wlogout {
+    opacity: 1;
+    border-radius: 7px;
+    font-size: 17px;
+    font-weight: bold;
+    transition: all 0.1s ease-in;
+    background-color: @dark-color;
+    color: @light-color;
 }
 
-#custom-menu:hover,#custom-clipboard:hover,#clock:hover,#custom-screenshot:hover,#network:hover,#custom-updates:hover,#custom-wlogout:hover {
-  transition: all 0.1s ease-in;
-  background-color: @main-light-color;
-  color: @dark-color;
+#custom-menu:hover,
+#custom-clipboard:hover,
+#clock:hover,
+#custom-screenshot:hover,
+#network:hover,
+#custom-updates:hover,
+#custom-wlogout:hover {
+    transition: all 0.1s ease-in;
+    background-color: @main-light-color;
+    color: @dark-color;
 }
 
 #custom-menu {
-  padding: 0px 10px 0px 6px;
-  margin: 5px 0px 5px 7px;
-  font-size: 18px;
+    padding: 0px 10px 0px 6px;
+    margin: 5px 0px 5px 7px;
+    font-size: 18px;
 }
 
 #custom-clipboard {
-  padding: 0px 9px 0px 7px;
-  margin: 5px 0px;
+    padding: 0px 9px 0px 7px;
+    margin: 5px 0px;
 }
 
 #clock {
-  padding: 0px 0px;
-  margin: 5px 11px;
+    padding: 0px 0px;
+    margin: 5px 11px;
 }
 
 #custom-screenshot {
-  padding: 0px 5px;
-  margin: 5px 0px;
+    padding: 0px 11px 0px 6px;
+    margin: 5px 0px;
 }
 
 #network {
-  padding: 0px 10px;
-  margin: 5px 7px 5px 11px;
+    padding: 0px 10px;
+    margin: 5px 7px 5px 11px;
 }
 
 /* #bluetooth, #bluetooth.on, #bluetooth.connected { */
@@ -289,60 +309,73 @@ tooltip > box {
 /* } */
 
 #custom-updates {
-  padding: 0px 14px;
-  margin: 5px 4px;
+    padding: 0px 14px;
+    margin: 5px 4px;
 }
 
 #custom-wlogout {
-  padding: 0px 6px 0px 5px;
-  margin: 5px 7px;
+    padding: 0px 11px 0px 7px;
+    margin: 5px 7px;
 }
 
 /* -----------------------------------------------------
 * Secondary Modules
 * ----------------------------------------------------- */
 
-#window,#wireplumber,#backlight,#disk,#memory,#cpu,#battery {
-  opacity: 1;
-  padding: 0px 2px;
-  margin: 5px 8px;
-  border-radius: 7px;
-  font-size: 17px;
-  font-weight: bold;
-  background-color: transparent;
-  transition: all 0.1s ease-in;
-  color: @dark-color;
+#window,
+#wireplumber,
+#backlight,
+#disk,
+#memory,
+#cpu,
+#battery {
+    opacity: 1;
+    padding: 0px 2px;
+    margin: 5px 8px;
+    border-radius: 7px;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: transparent;
+    transition: all 0.1s ease-in;
+    color: @dark-color;
 }
 
-#window:hover,#wireplumber:hover,#backlight:hover,#disk:hover,#memory:hover,#cpu:hover,#battery:hover {
-  transition: all 0.1s ease-in;
-  background-color: @main-light-color;
+#window:hover,
+#wireplumber:hover,
+#backlight:hover,
+#disk:hover,
+#memory:hover,
+#cpu:hover,
+#battery:hover {
+    transition: all 0.1s ease-in;
+    background-color: @main-light-color;
 }
 
 /* Battery Animation */
 
-#battery.charging, #battery.plugged {
-  margin: 7px 0px;
-  border-radius: 30px;
-  background-color: transparent;
-  color: @dark-color;
+#battery.charging,
+#battery.plugged {
+    margin: 7px 0px;
+    border-radius: 30px;
+    background-color: transparent;
+    color: @dark-color;
 }
 
 @keyframes blink {
-  to {
-    background-color: transparent;
-    color: white;
-  }
+    to {
+        background-color: transparent;
+        color: white;
+    }
 }
 
 #battery.critical:not(.charging) {
-  margin: 5px 0px;
-  border-radius: 7px;
-  animation-name: blink;
-  animation-duration: 0.5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  background-color: #ca7081;
-  color: @light-color;
+    margin: 5px 0px;
+    border-radius: 7px;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    background-color: #ca7081;
+    color: @light-color;
 }
