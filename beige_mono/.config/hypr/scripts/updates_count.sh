@@ -1,8 +1,8 @@
 #!/bin/bash
 # -*- coding: utf-8 -*-
 aur_helper="yay"
-# count=$(checkupdates-with-aur | wc -l)
-count=$(pacman -Qu | wc -l)
+count=$(checkupdates-with-aur | wc -l)
+# count=$(pacman -Qu | wc -l)
 char="•"
 
 if (( count == 0 )); then

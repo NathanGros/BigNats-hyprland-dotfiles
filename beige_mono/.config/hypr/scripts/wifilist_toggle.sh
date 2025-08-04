@@ -1,8 +1,9 @@
 #!/bin/bash
+
 if pgrep -x wofi; then
   killall wofi
 else
-  ssid=$(nmcli -t -f ssid dev wifi | sort -u | awk 'NR>1' | wofi -i --dmenu -c $HOME/.config/wofi/wifilistconfig)
+  ssid=$(nmcli -t -f ssid dev wifi | sort -u | awk 'NR>1' | wofi -i --dmenu -c "$HOME"/.config/wofi/wifilistconfig)
 
   # if cancel:
   if [ -z "$ssid" ]; then
