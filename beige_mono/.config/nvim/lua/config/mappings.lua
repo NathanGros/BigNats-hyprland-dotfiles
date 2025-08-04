@@ -1,22 +1,18 @@
 local map = vim.keymap.set
 
-map("n", "<esc>", ":noh<CR>", { desc = "Clear highlights" })
+map("n", "<esc>", ":noh<CR>", { desc = "Clear highlights", silent = true })
 
 -- Alpha dashboard
-map("n", "<leader>a", ":Alpha<CR>", { desc = "Open dashboard"})
+map("n", "<leader>a", ":Alpha<CR>", { desc = "Open dashboard", silent = true })
 
 -- Telescope
-map("n", "<leader>ff", ":Telescope find_files<CR>", { desc = "Telescope find files" })
-map("n", "<leader>fr", ":Telescope oldfiles<CR>", { desc = "Telescope find recent files" })
-map("n", "<leader>fg", ":Telescope live_grep<CR>", { desc = "Telescope live grep" })
+map("n", "<leader>ff", ":Telescope find_files<CR>", { desc = "Telescope find files", silent = true })
+map("n", "<leader>fr", ":Telescope oldfiles<CR>", { desc = "Telescope find recent files", silent = true })
+map("n", "<leader>fg", ":Telescope live_grep<CR>", { desc = "Telescope live grep", silent = true })
 
 -- NeoTree
-map("n", "<leader>e", ":Neotree reveal<CR>", { desc = "Focus Neotree" })
-map("n", "<leader>n", ":Neotree toggle<CR>", { desc = "Toggle Neotree" })
-
--- FineCmdLine
-map("n", ":", "<cmd>FineCmdline<CR>", { noremap = true }, { desc = "Open command line" })
-map("n", ";", "<cmd>FineCmdline<CR>", { noremap = true }, { desc = "Open command line" })
+map("n", "<leader>e", ":Neotree reveal<CR>", { desc = "Focus Neotree", silent = true })
+map("n", "<leader>n", ":Neotree toggle<CR>", { desc = "Toggle Neotree", silent = true })
 
 -- System clipboard
 map("n", "y", '"+y', { noremap = true })
@@ -55,9 +51,29 @@ map("v", "<leader>/", function()
 end, { desc = "Toggle comment (visual)" })
 
 -- BufferLine
-map("n", "<tab>", ":BufferLineCycleNext<CR>", { desc = "Go to next tab" })
-map("n", "<S-tab>", ":BufferLineCyclePrev<CR>", { desc = "Go to previous tab" })
-local bufdelete = require('snacks.bufdelete').delete
-map('n', '<leader>x', function()
-  bufdelete(0)  -- 0 means current buffer
+map("n", "<tab>", ":BufferLineCycleNext<CR>", { desc = "Go to next tab", silent = true })
+map("n", "<S-tab>", ":BufferLineCyclePrev<CR>", { desc = "Go to previous tab", silent = true })
+local bufdelete = require("snacks.bufdelete").delete
+map("n", "<leader>x", function()
+	bufdelete(0) -- 0 means current buffer
 end, { desc = "Close tab" })
+
+-- ToggleTerm
+map("t", "<esc>", [[<C-\><C-n>]], { desc = "exit insert mode in terminal" })
+map("n", "<leader>t", ":ToggleTerm direction=horizontal<CR>", { desc = "Toggle terminal", silent = true })
+local Terminal = require("toggleterm.terminal").Terminal
+local lazygitterm = Terminal:new({
+	cmd = "lazygit",
+	dir = "git_dir",
+	direction = "float",
+	float_opts = {
+		border = "curved",
+	},
+})
+map("n", "<leader>gt", function()
+	lazygitterm:toggle()
+end, { silent = true })
+
+-- UFO Folds
+map("n", "zR", require("ufo").openAllFolds)
+map("n", "zM", require("ufo").closeAllFolds)

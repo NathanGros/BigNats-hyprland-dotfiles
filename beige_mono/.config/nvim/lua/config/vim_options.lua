@@ -7,21 +7,27 @@ vim.cmd("set shiftwidth=4")
 -- Gutter
 vim.cmd("set number")
 vim.cmd("set relativenumber")
-vim.cmd("set foldcolumn=3")
 vim.cmd("set signcolumn=yes")
+
+-- Folds
+vim.o.foldcolumn = "1"
+vim.o.fillchars = [[fold: ,foldopen:,foldsep: ,foldclose:]]
+vim.o.foldlevel = 99
+vim.o.foldlevelstart = 99
+vim.o.foldenable = true
 
 -- Use system clipboard
 vim.g.clipboard = {
-  name = "wl-clipboard",
-  copy = {
-    ["+"] = "wl-copy",
-    ["*"] = "wl-copy",
-  },
-  paste = {
-    ["+"] = "wl-paste --no-newline",
-    ["*"] = "wl-paste --no-newline",
-  },
-  cache_enabled = true,
+	name = "wl-clipboard",
+	copy = {
+		["+"] = "wl-copy",
+		["*"] = "wl-copy",
+	},
+	paste = {
+		["+"] = "wl-paste --no-newline",
+		["*"] = "wl-paste --no-newline",
+	},
+	cache_enabled = true,
 }
 
 -- Permanent undos and redos
@@ -30,13 +36,15 @@ local undodir = vim.fn.stdpath("data") .. "/undo"
 vim.opt.undodir = undodir
 -- Create the undo directory if it doesn't exist
 if vim.fn.isdirectory(undodir) == 0 then
-  vim.fn.mkdir(undodir, "p")
+	vim.fn.mkdir(undodir, "p")
 end
 
 -- Misc
+vim.cmd("set hidden")
 vim.cmd("set cursorline")
 vim.cmd("set ignorecase")
 vim.cmd("set smartcase")
 vim.opt.fillchars:append({ eob = " " })
+vim.opt.fillchars:append({ vert = "┃" })
 vim.o.showmode = false
 vim.g.mapleader = " "
