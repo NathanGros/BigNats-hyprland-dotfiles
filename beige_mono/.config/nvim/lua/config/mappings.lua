@@ -8,7 +8,7 @@ map("n", "<leader>a", ":Alpha<CR>", { desc = "Open dashboard", silent = true })
 -- Telescope
 map("n", "<leader>ff", ":Telescope find_files<CR>", { desc = "Telescope find files", silent = true })
 map("n", "<leader>fr", ":Telescope oldfiles<CR>", { desc = "Telescope find recent files", silent = true })
-map("n", "<leader>fg", ":Telescope live_grep<CR>", { desc = "Telescope live grep", silent = true })
+map("n", "<leader>fw", ":Telescope live_grep<CR>", { desc = "Telescope find word", silent = true })
 
 -- NeoTree
 map("n", "<leader>e", ":Neotree reveal<CR>", { desc = "Focus Neotree", silent = true })
@@ -43,7 +43,6 @@ map("n", "<leader>gf", vim.lsp.buf.format, { desc = "Format file" })
 map("n", "<leader>/", function()
 	require("Comment.api").toggle.linewise.current()
 end, { desc = "Toggle comment (line)" })
-
 map("v", "<leader>/", function()
 	local esc = vim.api.nvim_replace_termcodes("<ESC>", true, false, true)
 	vim.api.nvim_feedkeys(esc, "nx", false)
@@ -60,7 +59,7 @@ end, { desc = "Close tab" })
 
 -- ToggleTerm
 map("t", "<esc>", [[<C-\><C-n>]], { desc = "exit insert mode in terminal" })
-map("n", "<leader>t", ":ToggleTerm direction=horizontal<CR>", { desc = "Toggle terminal", silent = true })
+map("n", "<leader>t", ":ToggleTerm 1 direction=horizontal<CR>", { desc = "Toggle terminal", silent = true })
 local Terminal = require("toggleterm.terminal").Terminal
 local lazygitterm = Terminal:new({
 	cmd = "lazygit",
@@ -70,10 +69,14 @@ local lazygitterm = Terminal:new({
 		border = "curved",
 	},
 })
-map("n", "<leader>gt", function()
+map("n", "<leader>lg", function()
 	lazygitterm:toggle()
-end, { silent = true })
+end, { silent = true, desc = "Toggle lazygit" })
 
 -- UFO Folds
 map("n", "zR", require("ufo").openAllFolds)
 map("n", "zM", require("ufo").closeAllFolds)
+
+-- CodeRunner
+map("n", "<leader>rc", ":CodeRunner<CR>", { silent = true, desc = "Run current file" })
+map("n", "<leader>rm", ":CodeRunnerMain<CR>", { silent = true, desc = "Run Main file" })

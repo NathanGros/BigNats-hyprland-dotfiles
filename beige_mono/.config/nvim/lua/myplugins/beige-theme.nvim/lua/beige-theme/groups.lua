@@ -1,6 +1,6 @@
 local M = {}
 
-local colors = require("beige_theme.palette")
+local colors = require("beige-theme.palette")
 
 M.setup = function()
 	return {
@@ -313,6 +313,31 @@ M.setup = function()
 		BufferLineSeparator = { fg = colors.menubg, bg = "#e0d9d0" },
 		BufferLineSeparatorVisible = { fg = colors.menubg, bg = "#eae3da" },
 		BufferLineSeparatorSelected = { fg = colors.menubg, bg = colors.bg },
+
+        -- Notify
+        NotifyBackground = { bg = colors.bg, fg = colors.fg },
+        NotifyERRORBorder = { bg = colors.bg, fg = colors.error },
+        NotifyWARNBorder = { bg = colors.bg, fg = colors.warning },
+        NotifyINFOBorder = { bg = colors.bg, fg = colors.info },
+        NotifyDEBUGBorder = { bg = colors.bg, fg = colors.gray2 },
+        NotifyTRACEBorder = { bg = colors.bg, fg = colors.gray3 },
+        NotifyERRORIcon = { bg = colors.bg, fg = colors.error },
+        NotifyWARNIcon = { bg = colors.bg, fg = colors.warning },
+        NotifyINFOIcon = { bg = colors.bg, fg = colors.info },
+        NotifyDEBUGIcon = { bg = colors.bg, fg = colors.gray2 },
+        NotifyTRACEIcon = { bg = colors.bg, fg = colors.gray3 },
+        NotifyERRORTitle = { bg = colors.bg, fg = colors.fg, bold = true },
+        NotifyWARNTitle = { bg = colors.bg, fg = colors.fg, bold = true },
+        NotifyINFOTitle = { bg = colors.bg, fg = colors.fg, bold = true },
+        NotifyDEBUGTitle = { bg = colors.bg, fg = colors.fg, bold = true },
+        NotifyTRACETitle = { bg = colors.bg, fg = colors.fg, bold = true },
+        NotifyERRORBody = { bg = colors.bg, fg = colors.fg },
+        NotifyWARNBody = { bg = colors.bg, fg = colors.fg },
+        NotifyINFOBody = { bg = colors.bg, fg = colors.fg },
+        NotifyDEBUGBody = { bg = colors.bg, fg = colors.fg },
+        NotifyTRACEBody = { bg = colors.bg, fg = colors.fg },
+        NotifyLogTime = { bg = colors.bg, fg = colors.comment },
+        NotifyLogTitle = { bg = colors.bg, fg = colors.comment },
 
 		-- Markdown
 		--             markdownBlockquote = { fg = colors.yellow, italic = true },

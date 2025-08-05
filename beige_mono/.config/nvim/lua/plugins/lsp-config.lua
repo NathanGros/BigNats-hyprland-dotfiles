@@ -12,6 +12,7 @@ return {
 		},
 		config = function()
 			require("mason-lspconfig").setup({
+                -- lua, c, bash, typescript, javascript, html, css, python, java, ocaml
 				ensure_installed = { "lua_ls", "clangd", "bashls", "ts_ls", "html", "cssls", "ruff", "jdtls", "ocamllsp" },
 			})
 		end,

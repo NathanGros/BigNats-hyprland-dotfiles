@@ -29,9 +29,9 @@ local function apply_term_colors(colors)
 end
 
 local function apply(opts)
-      local colors = require("beige_theme.palette")
+      local colors = require("beige-theme.palette")
       apply_term_colors(colors)
-      local groups = require("beige_theme.groups").setup()
+      local groups = require("beige-theme.groups").setup()
 
       -- apply transparents
       if opts.transparent then
@@ -57,7 +57,7 @@ end
 
 M.load = function()
       if vim.fn.has("nvim-0.7") ~= 1 then
-            vim.notify("beige_theme.nvim: you must use neovim 0.7 or higher")
+            vim.notify("beige-theme.nvim: you must use neovim 0.7 or higher")
             return
       end
 
@@ -72,13 +72,13 @@ M.load = function()
 
       vim.o.background = "dark"
       vim.o.termguicolors = true
-      vim.g.colors_name = "beige_theme"
+      vim.g.colors_name = "beige-theme"
 
       apply(M.opts)
 end
 
 M.colors = function()
-      local colors = require("beige_theme.palette")
+      local colors = require("beige-theme.palette")
       return colors
 end
 

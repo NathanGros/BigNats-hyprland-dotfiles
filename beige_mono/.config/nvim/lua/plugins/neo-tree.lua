@@ -7,4 +7,15 @@ return {
 		"MunifTanjim/nui.nvim",
 	},
 	lazy = false,
+	config = function()
+		require("neo-tree").setup({
+			filesystem = {
+				filtered_items = {
+					hide_gitignored = true,
+					hide_dotfiles = true,
+				},
+				group_empty_dirs = true,
+			},
+		})
+	end,
 }
