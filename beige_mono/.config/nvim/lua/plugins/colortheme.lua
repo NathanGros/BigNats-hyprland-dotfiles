@@ -17,11 +17,7 @@ return {
 		lazy = false,
 		priority = 1000,
         config = function ()
-            -- Beige theme (comment to change theme)
 			vim.cmd("colorscheme beige-theme")
-
-            -- Catppuccin theme (uncomment to use)
-			-- vim.cmd("colorscheme catppuccin")
         end
 	},
 }

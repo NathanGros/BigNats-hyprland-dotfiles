@@ -1,5 +1,4 @@
 local M = {}
-local config = require("code-runner.config")
 local runterminal = require("code-runner.runterminal")
 
 -- Expand variables in the command
@@ -11,7 +10,7 @@ local function substitute(cmd)
 	return cmd
 end
 
-function M.run(mode)
+function M.run(mode, config)
 	local term = runterminal.get_term()
 	if term:is_open() then
 		term:close()

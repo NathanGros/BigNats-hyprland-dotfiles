@@ -28,6 +28,9 @@ return {
 				-- OCaml
 				null_ls.builtins.formatting.ocamlformat,
 				-- null_ls.builtins.diagnostics.ocamllsp,
+                -- Rust
+				null_ls.builtins.formatting.rustfmt,
+				null_ls.builtins.diagnostics.rust_analyzer,
 			},
 		})
 	end,

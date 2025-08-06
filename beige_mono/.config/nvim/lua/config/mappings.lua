@@ -15,6 +15,7 @@ map("n", "<leader>e", ":Neotree reveal<CR>", { desc = "Focus Neotree", silent = 
 map("n", "<leader>n", ":Neotree toggle<CR>", { desc = "Toggle Neotree", silent = true })
 
 -- System clipboard
+map("n", "<C-a>", "ggVG", { noremap = true, desc = "Select everything" })
 map("n", "y", '"+y', { noremap = true })
 map("n", "yy", '"+yy', { noremap = true })
 map("n", "p", '"+p', { noremap = true })
@@ -58,7 +59,7 @@ map("n", "<leader>x", function()
 end, { desc = "Close tab" })
 
 -- ToggleTerm
-map("t", "<esc>", [[<C-\><C-n>]], { desc = "exit insert mode in terminal" })
+map("t", "<esc>", [[<C-\><C-n>]], { desc = "Exit insert mode in terminal" })
 map("n", "<leader>t", ":ToggleTerm 1 direction=horizontal<CR>", { desc = "Toggle terminal", silent = true })
 local Terminal = require("toggleterm.terminal").Terminal
 local lazygitterm = Terminal:new({
@@ -80,3 +81,6 @@ map("n", "zM", require("ufo").closeAllFolds)
 -- CodeRunner
 map("n", "<leader>rc", ":CodeRunner<CR>", { silent = true, desc = "Run current file" })
 map("n", "<leader>rm", ":CodeRunnerMain<CR>", { silent = true, desc = "Run Main file" })
+
+-- Switch theme
+map("n", "<leader>ct", ":ToggleTheme<CR>", { silent = true, desc = "Switch color theme" })

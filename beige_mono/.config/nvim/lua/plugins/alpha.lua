@@ -8,9 +8,6 @@ return {
 		dashboard.section.header.val = {
 			"                                                                       ",
 			"                                                                       ",
-			"                                                                       ",
-			"                                                                       ",
-			"                                                                       ",
 			"                                                                     ",
 			"       ████ ██████           █████      ██                     ",
 			"      ███████████             █████                             ",
@@ -26,7 +23,7 @@ return {
 			dashboard.button("e", "  Open Tree", ":Neotree toggle<CR>"),
 			dashboard.button("fr", "  Recent Files", ":Telescope oldfiles<CR>"),
 			dashboard.button("ff", "  Find File", ":Telescope find_files<CR>"),
-			dashboard.button("fg", "󰈭  Find Word", ":Telescope live_grep<CR>"),
+			dashboard.button("fw", "󰈭  Find Word", ":Telescope live_grep<CR>"),
 			dashboard.button("prog", "󰴉  Programming Folder", ":Neotree dir=~/Documents/programming/<CR>"),
 			dashboard.button(
 				"aoc",
@@ -40,6 +37,8 @@ return {
 			),
 			dashboard.button("conf", "󱁿  Nvim config", ":Neotree dir=~/.config/nvim/<CR>"),
 			dashboard.button("m", "  Mappings", ":WhichKey<CR>"),
+			dashboard.button("L", "  Open Lazy", ":Lazy<CR>"),
+			dashboard.button("M", "  Open Mason", ":Mason<CR>"),
 			dashboard.button("q", "󰗼  Quit", ":qa<CR>"),
 		}
 

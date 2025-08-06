@@ -16,20 +16,6 @@ vim.o.foldlevel = 99
 vim.o.foldlevelstart = 99
 vim.o.foldenable = true
 
--- Use system clipboard
-vim.g.clipboard = {
-	name = "wl-clipboard",
-	copy = {
-		["+"] = "wl-copy",
-		["*"] = "wl-copy",
-	},
-	paste = {
-		["+"] = "wl-paste --no-newline",
-		["*"] = "wl-paste --no-newline",
-	},
-	cache_enabled = true,
-}
-
 -- Permanent undos and redos
 vim.opt.undofile = true
 local undodir = vim.fn.stdpath("data") .. "/undo"
@@ -48,3 +34,34 @@ vim.opt.fillchars:append({ eob = " " })
 vim.opt.fillchars:append({ vert = "┃" })
 vim.o.showmode = false
 vim.g.mapleader = " "
+
+-- Use system clipboard
+if vim.fn.has("unix") == 1 then
+	if os.getenv("WAYLAND_DISPLAY") then
+		vim.g.clipboard = {
+			name = "wl-clipboard",
+			copy = {
+				["+"] = "wl-copy",
+				["*"] = "wl-copy",
+			},
+			paste = {
+				["+"] = "wl-paste --no-newline",
+				["*"] = "wl-paste --no-newline",
+			},
+			cache_enabled = true,
+		}
+	elseif os.getenv("DISPLAY") then
+		vim.g.clipboard = {
+			name = "xclip",
+			copy = {
+				["+"] = "xclip -selection clipboard",
+				["*"] = "xclip -selection primary",
+			},
+			paste = {
+				["+"] = "xclip -selection clipboard -o",
+				["*"] = "xclip -selection primary -o",
+			},
+			cache_enabled = true,
+		}
+	end
+end
