@@ -15,7 +15,8 @@ map("n", "<leader>e", ":Neotree reveal<CR>", { desc = "Focus Neotree", silent = 
 map("n", "<leader>n", ":Neotree toggle<CR>", { desc = "Toggle Neotree", silent = true })
 
 -- System clipboard
-map("n", "<C-a>", "ggVG", { noremap = true, desc = "Select everything" })
+-- map("n", "<C-a>", "ggVG", { noremap = true, desc = "Select everything" })
+-- shit, control a is used for incrementing numbers
 map("n", "y", '"+y', { noremap = true })
 map("n", "yy", '"+yy', { noremap = true })
 map("n", "p", '"+p', { noremap = true })

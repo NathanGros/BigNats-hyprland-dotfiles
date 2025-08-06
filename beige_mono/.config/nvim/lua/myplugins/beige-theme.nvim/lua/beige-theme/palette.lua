@@ -32,10 +32,17 @@ colors.fg = colors.black
 colors.bg = colors.white
 colors.menubg = colors.gray9
 colors.nontext = colors.gray5
+
 colors.comment = colors.gray3
-colors.literal = colors.blue
+colors.literal = colors.bright_yellow
+colors.class = colors.orange
 colors.string = colors.green
 colors.keyword = colors.bright_magenta
+colors.func = colors.blue
+colors.type = colors.bright_orange
+colors.variable = colors.gray1
+colors.variable_important = colors.fg
+
 colors.error = colors.red
 colors.warning = colors.bright_yellow
 colors.info = colors.blue
