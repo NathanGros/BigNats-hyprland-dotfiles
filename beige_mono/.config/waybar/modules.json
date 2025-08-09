@@ -116,11 +116,12 @@
 
   // Network
   "network": {
-    "format": "{ifname}",
-    "format-wifi": "   {signalStrength}% {essid}",
+    "format": "{icon}   {ifname}",
+    "format-wifi": "{icon}   {essid}",
     "format-ethernet": "   {ifname}",
-    "format-disconnected": "󱚼   Searching",
-    "format-disabled": "󰖪   Disabled",
+    "format-disconnected": "󰤫   Searching...",
+    "format-disabled": "󰤮   Disabled",
+    "format-icons": ["󰤯 ", "󰤟 ", "󰤢 ", "󰤥 ", "󰤨 "],
     "tooltip-format": "{ifname} via {gwaddri}",
     "tooltip-format-wifi": "{ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\nUp: {bandwidthUpBits}\nClick to toggle wifi selector",
     "tooltip-format-ethernet": "{ifname}\nIP: {ipaddr}\n up: {bandwidthUpBits} down: {bandwidthDownBits}",
