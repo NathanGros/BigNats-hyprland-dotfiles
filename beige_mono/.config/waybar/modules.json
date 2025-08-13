@@ -97,7 +97,7 @@
 
   // Memory
   "memory": {
-    "format": "󰒋 {}%",
+    "format": "󰒋   {}%",
     "tooltip-format": " {used} / {total}Gib RAM used",
     "interval": 5,
     "on-click": "foot -T btop -e btop",
@@ -107,7 +107,7 @@
 
   // CPU
   "cpu": {
-    "format": "  {usage}%",
+    "format": "    {usage}%",
     "interval": 1,
     "on-click": "foot -T btop -e btop",
     "min-length": 7,
@@ -139,10 +139,10 @@
       "warning": 30,
       "critical": 20
     },
-    "format": "{icon} {capacity}%",
-    "format-full": " 100%",
-    "format-charging": " {capacity}%",
-    "format-plugged": "  {capacity}%",
+    "format": "{icon}  {capacity}%",
+    "format-full": "  100%",
+    "format-charging": "  {capacity}%",
+    "format-plugged": "   {capacity}%",
     "format-icons": [" ", " ", " ", " ", " "],
     "format-off": "",
     "tooltip-format-full": "Battery full",
@@ -164,7 +164,7 @@
 
   // backlight:
   "backlight": {
-    "format": "{icon} {percent}%",
+    "format": "{icon}   {percent}%",
     "format-icons": [
       "",
       "",
@@ -189,12 +189,12 @@
   },
 
   "wireplumber": {
-    "format": "{icon}  {volume}%",
-    "format-muted": "󰝟  mute",
+    "format": "{icon}    {volume}%",
+    "format-muted": "    mute",
     "tooltip-format": "{node_name} at {volume}%",
     "scroll-step": "5.0",
     "max-volume": "100.0",
-    "format-icons": ["", "", " ", " "],
+    "format-icons": ["", "", "", ""],
     "min-length": 7,
     "max-length": 7,
     "scroll-step": 5
