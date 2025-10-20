@@ -1,0 +1,93 @@
+*{
+  font-family: noto;
+  font-size: 16px;
+}
+
+window {
+  background-color: transparent;
+}
+
+window > box {
+  border-radius: 10px;
+  background-color: rgba(--wofi-rgb-color2, 1);
+  margin: 2px 9px 8px 2px;
+  box-shadow: 3px 3px 2px 3px #808080;
+}
+
+#input {
+  margin: 0px;
+  padding: 0px;
+  height: 0px;
+  background-color: rgba(--wofi-rgb-color3, 1);
+  color: --wofi-color0;
+  font-size: 0px;
+}
+
+/* search icon */
+#input:first-child > :nth-child(1) {
+  background-color: rgba(--wofi-rgb-color0, 1);
+  margin: 0px;
+  padding: 0px;
+  color: --wofi-color1;
+  font-size: 0px;
+  font-weight: bold;
+}
+
+/* clear icon */
+#input:first-child > :nth-child(4){
+  background-color: rgba(--wofi-rgb-color0, 1);
+  margin: 0px;
+  padding: 0px;
+  color: --wofi-color1;
+  font-size: 0px;
+  font-weight: bold;
+}
+
+#inner-box {
+  margin: 0px 10px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(--wofi-rgb-color3, 1);
+}
+
+#outer-box {
+  padding: 0px 20px 15px 20px;
+  border-radius: 10px;
+  background-color: rgba(--wofi-rgb-color2, 1);
+}
+
+#text {
+  padding: 5px;
+  color: rgba(--wofi-rgb-color0, 1);
+  transition: all 0.1s ease-in;
+}
+
+#entry {
+  color: --wofi-color0;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 8px;
+  width: 30%;
+  transition: all 0.1s ease-in;
+}
+
+#entry:selected {
+  color: --wofi-color3;
+  background-color: --wofi-color0;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0px 0px 0px 20px;
+  outline: none;
+  transition: all 0.1s ease-in;
+}
+
+#text:selected {
+  color: --wofi-color3;
+  font-weight: bold;
+  transition: all 0.1s ease-in;
+}
+
+#scroll {
+}
+
+#img {
+}

@@ -1,0 +1,65 @@
+* {
+    background-image: none;
+    font-size: 17px;
+    font-family: Roboto;
+}
+
+window {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+button {
+    color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(255, 255, 255, 0.2);
+    outline-style: none;
+    border: none;
+    border-width: 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30%;
+    border-radius: 0px;
+    box-shadow: none;
+    text-shadow: none;
+    transition: all 0.2s ease-in-out;
+    margin : 50px 0px 50px 0px;
+}
+
+#lock {
+    background-image: image(url("icons/lock.png"));
+    border-radius: 40px 0px 0px 40px;
+}
+
+#logout {
+    background-image: image(url("icons/logout.png"));
+    padding: 0px 20px;
+}
+
+#shutdown {
+    background-image: image(url("icons/shutdown.png"));
+    padding: 0px 20px;
+}
+
+#reboot {
+    background-image: image(url("icons/reboot.png"));
+    border-radius: 0px 40px 40px 0px;
+}
+
+button:focus {
+    background-color: rgba(255, 255, 255, 0.6);
+    background-size: 35%;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    background-size: 40%;
+    border-radius: 30px;
+    margin : 10px 0px 10px 0px;
+}
+
+#lock:hover {
+    border-radius: 30px;
+}
+
+#reboot:hover {
+    border-radius: 30px;
+}

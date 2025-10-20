@@ -1,0 +1,16 @@
+stylesheet=style.css
+colors=colors
+mode=drun
+width=55%
+height=70%
+prompt=Search clipboard
+allow_images=true
+hide_scroll=false
+insensitive=true
+columns=1
+filter_rate=100
+image_size=32
+key_expand=Tab
+location=2
+xoffset=0
+yoffset=8

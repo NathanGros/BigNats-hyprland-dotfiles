@@ -1,0 +1,16 @@
+stylesheet=screenshotstyle.css
+colors=colors
+mode=drun
+width=20%
+height=29%
+allow_images=true
+hide_scroll=false
+insensitive=true
+columns=1
+hide_search=true
+filter_rate=100
+image_size=32
+location=2
+xoffset=0
+yoffset=8
+single_click=true

@@ -1,0 +1,17 @@
+# see man 5 zathurarc
+
+set selection-clipboard clipboard
+
+set default-bg \#d0d0d0
+set completion-bg \#e0e0e0
+set completion-fg \#000000
+set completion-highlight-bg \#000000
+set completion-highlight-fg \#ffffff
+set inputbar-bg \#e0e0e0
+set inputbar-fg \#000000
+set notification-bg \#e0e0e0
+set notification-fg \#000000
+set notification-error-bg \#ca7081
+set notification-error-fg \#ffffff
+set statusbar-bg \#e0e0e0
+set statusbar-fg \#000000

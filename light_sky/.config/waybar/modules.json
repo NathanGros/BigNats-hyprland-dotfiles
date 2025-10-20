@@ -1,0 +1,208 @@
+{
+  // Workspaces
+  "hyprland/workspaces": {
+    "show-special": true,
+    "special-visible-only": false,
+    "on-scroll-up": "hyprctl dispatch workspace r-1",
+    "on-scroll-down": "hyprctl dispatch workspace r+1",
+    "on-click": "activate",
+    "active-only": false,
+    "all-outputs": true,
+    "format": "",
+    "format-icons": {
+      "urgent": "",
+      "active": "",
+      "default": ""
+    },
+    "persistent-workspaces": {
+      "*": 5
+    }
+  },
+
+  // Taskbar
+  "wlr/taskbar": {
+    "format": "{icon}",
+    "icon-size": 16,
+    "tooltip-format": "{title}\n\nClick to go to\nMiddle click to toggle fullscreen\nRight click to close",
+    "on-click": "activate",
+    "on-click-middle": "fullscreen",
+    "on-click-right": "close",
+    "max-length": 15,
+    "app_ids-mapping": {
+      "firefoxdeveloperedition": "firefox-developer-edition"
+    },
+    "rewrite": {
+      "Firefox Web Browser": "Firefox",
+      "Foot Server": "Terminal"
+    }
+  },
+
+  // Empty
+  "custom/empty": {
+    "format": ""
+  },
+
+  // Updates
+  "custom/updates": {
+    "format": "𜱭 {}",
+    "escape": true,
+    "exec": "~/.config/hypr/scripts/updates_count.sh",
+    "interval": 600,
+    "on-click": "~/.config/hypr/scripts/updates_toggle.sh",
+    "tooltip-format": "Update system"
+  },
+
+  // App menu
+  "custom/menu": {
+    "format": "󰣇",
+    "on-click": "~/.config/hypr/scripts/appmenu_toggle.sh",
+    "tooltip-format": "Applications"
+  },
+
+  // Clipboard menu
+  "custom/clipboard": {
+    "format": "",
+    "on-click": "~/.config/hypr/scripts/clipboard_toggle.sh",
+    "tooltip-format": "Open clipboard"
+  },
+
+  // Screenshot menu
+  "custom/screenshot": {
+    "format": "{}",
+    "exec": "~/.config/hypr/scripts/recording_state.sh",
+    "interval": 1,
+    "on-click": "~/.config/hypr/scripts/screenshotlist.sh",
+    "tooltip-format": "Open screenshot menu"
+  },
+
+  // Logout menu
+  "custom/wlogout": {
+    "format": "",
+    "on-click": "~/.config/hypr/scripts/logout_toggle.sh",
+    "tooltip-format": "Logout"
+  },
+
+  // System tray
+  "tray": {
+    "icon-size": 18,
+    "spacing": 7
+  },
+
+  // Clock
+  "clock": {
+    "format": "{:%H:%M   %d-%m-%Y}",
+    "tooltip-format": "{:%A %d %B %Y}\nToggle todo list",
+    "on-click": "~/.config/hypr/scripts/todo_toggle.sh",
+    "min-length": 17,
+    "max-length": 17
+  },
+
+  // Memory
+  "memory": {
+    "format": "  {}%",
+    "tooltip-format": " {used} / {total}Gib RAM used",
+    "interval": 5,
+    "on-click": "foot -T btop -e btop",
+    "min-length": 7,
+    "max-length": 7
+  },
+
+  // CPU
+  "cpu": {
+    "format": "   {usage}%",
+    "interval": 1,
+    "on-click": "foot -T btop -e btop",
+    "min-length": 7,
+    "max-length": 7
+  },
+
+  // Network
+  "network": {
+    "format": "{icon}",
+    "format-wifi": "{icon}",
+    "format-ethernet": "",
+    "format-disconnected": "󰤫",
+    "format-disabled": "󰤮",
+    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+    "tooltip-format": "{ifname} via {gwaddri}",
+    "tooltip-format-wifi": "{essid} ({signalStrength}%)",
+    "tooltip-format-ethernet": "{ifname}",
+    "tooltip-format-disconnected": "Searching for network...",
+    "tooltip-format-disabled": "Wifi disabled",
+    "on-click": "~/.config/hypr/scripts/wifilist_toggle.sh",
+    "interval": 5,
+    "min-length": 2,
+    "max-length": 2
+  },
+
+  // Battery
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 20
+    },
+    "format": "{icon}",
+    "format-full": "󰂄",
+    "format-charging": "󰂄",
+    "format-plugged": "󰂄",
+    "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+    "format-off": "",
+    "tooltip-format-full": "Battery full",
+    "tooltip-format": "{time} ({capacity}%)",
+    "on-click": "power-options-gtk",
+    "interval": 5,
+    "min-length": 3,
+    "max-length": 3
+  },
+
+  // Bluetooth
+  //"bluetooth": {
+  //  "format": " {status}",
+  //  "format-disabled": "",
+  //  "format-off": "",
+  //  "interval": 30,
+  //  "on-click": "blueman-manager",
+  //  "format-no-controller": ""
+  //},
+
+  // backlight:
+  "backlight": {
+    "format": "{icon}",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "tooltip-format": "{percent}%",
+    "min-length": 3,
+    "max-length": 3,
+    "scroll-step": 10
+  },
+
+  "wireplumber": {
+    "format": "{icon}",
+    "format-muted": " ",
+    "tooltip-format": "{volume}%",
+    "scroll-step": "5.0",
+    "max-volume": "100",
+    "format-icons": [
+      " ",
+      " ",
+      " ",
+      " ",
+      " "
+    ],
+    "min-length": 3,
+    "max-length": 3,
+    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+    "scroll-step": 5
+  }
+}

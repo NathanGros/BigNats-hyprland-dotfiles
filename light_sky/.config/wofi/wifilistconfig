@@ -1,0 +1,16 @@
+stylesheet=style.css
+colors=colors
+mode=drun
+width=20%
+height=40%
+allow_images=true
+hide_scroll=false
+insensitive=true
+columns=1
+filter_rate=100
+image_size=32
+prompt=Search network
+key_expand=Tab
+location=3
+xoffset=-17
+yoffset=8

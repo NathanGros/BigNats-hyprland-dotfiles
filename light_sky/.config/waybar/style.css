@@ -1,0 +1,353 @@
+/* Colors */
+
+@define-color dark-gray #d0d0d0;
+@define-color light-gray #f0f0f0;
+@define-color black #1a1a1a;
+@define-color white rgba(255, 255, 255, 0.9);
+@define-color black-background rgba(0, 0, 0, 0.3);
+@define-color white-background rgba(255, 255, 255, 0.15);
+
+/* -----------------------------------------------------
+* General 
+* ----------------------------------------------------- */
+
+* {
+    font-family: Roboto, Noto, "Font Awesome 6 Free", FontAwesome;
+    font-size: 4px;
+    border: none;
+    border-radius: 0px;
+}
+
+window#waybar {
+    background-color: transparent;
+    opacity: 1;
+    transition-property: transparent;
+    transition-duration: .3s;
+    margin: 0px;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.3) 0%,
+        rgba(0, 0, 0, 0.15) 60%,
+        rgba(0, 0, 0, 0) 100%
+    );
+}
+
+window#waybar>box {
+    margin: 0px 20px 4px 20px;
+}
+
+/* -----------------------------------------------------
+* Tooltips
+* ----------------------------------------------------- */
+
+tooltip {
+    opacity: 0.9;
+    background-color: transparent;
+    padding: 0px;
+    margin: 0px;
+}
+
+tooltip label {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: bold;
+    padding: 0px;
+    margin: 5px;
+    color: @white;
+}
+
+tooltip>box {
+    margin: 0px;
+    border-radius: 20px;
+    background-color: @black-background;
+}
+
+/* -----------------------------------------------------
+* Workspaces 
+* ----------------------------------------------------- */
+
+#workspaces {
+    opacity: 1;
+    padding: 0px 3px;
+    margin: 4px 0px 4px 0px;
+    border-radius: 20px;
+    transition: background-color 0.1s ease-in;
+    background-color: @white-background;
+}
+
+#workspaces button {
+    opacity: 1;
+    margin: 3px 0px;
+    padding: 0px 6px;
+    min-height: 0px;
+    min-width: 0px;
+    border-radius: 20px;
+    transition: background-color 0.1s ease-in;
+    background-color: transparent;
+}
+
+#workspaces button>box {
+    margin: 6px 0px;
+    padding: 0px 5px;
+    border-radius: 10px;
+    transition: background-color 0.1s ease-in;
+    background-color: @white;
+}
+
+#workspaces button.active {
+    background-color: transparent;
+}
+
+#workspaces button.active>box {
+    margin: 6px 0px;
+    padding: 0px 15px;
+    border-radius: 10px;
+    transition: background-color 0.1s ease-in;
+    background-color: @white;
+}
+
+#workspaces button.special {
+    margin: 2px 0px;
+    padding: 0px 3px;
+    border-radius: 20px;
+    min-height: 0px;
+    min-width: 0px;
+    font-size: 0px;
+    background-color: transparent;
+}
+
+#workspaces button.special>box {
+    margin: 3px 0px;
+    padding: 0px 9px;
+    border-radius: 20px;
+    transition: background-color 0.1s ease-in;
+    background-color: @white;
+}
+
+#workspaces button.special.active {
+    margin: 2px 0px;
+    padding: 0px 5px;
+    background-color: @white;
+}
+
+#workspaces button.special.active>box {
+    margin: 5px 0px;
+    padding: 0px 7px;
+    transition: background-color 0.1s ease-in;
+    background-color: @white;
+}
+
+#workspaces button:hover {
+    transition: background-color 0.1s ease-in;
+    background-color: @white-background;
+}
+
+/* -----------------------------------------------------
+* Tray
+* ----------------------------------------------------- */
+
+#tray {
+    opacity: 1;
+    padding: 3px 6px;
+    margin: 4px 0px;
+    border-radius: 20px;
+    transition: background-color 0.1s ease-in;
+    background-color: @white-background;
+}
+
+#tray>* {
+    opacity: 1;
+    /* padding: 5px 7px; */ /* These don't work no matter what I do */
+    /* margin: 4px 0px; */
+    border-radius: 20px;
+    transition: background-color 0.1s ease-in;
+    background-color: transparent;
+}
+
+#tray>*:hover {
+    background-color: @white-background;
+}
+
+#tray menu {
+    border-radius: 20px;
+    padding: 4px 0px;
+    color: #f0f0f0;
+    font-size: 13px;
+    box-shadow: none; /* The shadow is still there */
+    background: @white-background;
+}
+
+#tray menu menuitem {
+    padding: 4px 10px;
+    margin: 4px 10px;
+    border-radius: 20px;
+    transition: background 0.15s ease, color 0.15s ease;
+    font-size: 13px; /* Can't change font size */
+}
+
+#tray menu menuitem:hover { /* works */
+    background: @white;
+    color: @black;
+}
+
+#tray menu separator { /* works */
+    margin: 0px 0px;
+    border-bottom: 3px solid @white;
+}
+
+
+/* -----------------------------------------------------
+ * Taskbar
+ * ----------------------------------------------------- */
+
+#taskbar {
+    opacity: 1;
+    padding: 0px 2px;
+    margin: 4px 0px 4px 0px;
+    border-radius: 20px;
+    transition: background-color 0.1s ease-in;
+    background-color: @white-background;
+}
+
+#taskbar button {
+    opacity: 1;
+    margin: 2px 0px;
+    padding: 0px 2px;
+    min-height: 0px;
+    min-width: 0px;
+    border-radius: 20px;
+    transition: background-color 0.1s ease-in;
+    background-color: transparent;
+}
+
+#taskbar button>box {
+    margin: 2px 0px;
+    padding: 0px 2px;
+    border-radius: 20px;
+    transition: background-color 0.1s ease-in;
+    background-color: transparent;
+}
+
+#taskbar button:hover {
+    background-color: @white-background;
+}
+
+#taskbar button.active>box {
+    background-color: @white;
+}
+
+#taskbar.empty {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    min-height: 0px;
+    min-width: 0px;
+    background: transparent;
+}
+
+/* -----------------------------------------------------
+* Modules
+* ----------------------------------------------------- */
+
+#custom-menu,
+#custom-clipboard,
+#clock,
+#custom-screenshot,
+#memory,
+#cpu,
+#wireplumber,
+#backlight,
+#battery,
+#network,
+#custom-updates,
+#custom-wlogout {
+    opacity: 1;
+    border-radius: 7px;
+    margin: 4px 0px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: all 0.1s ease-in;
+    background-color: transparent;
+    color: @white;
+}
+
+#custom-menu:hover,
+#custom-clipboard:hover,
+#clock:hover,
+#custom-screenshot:hover,
+#memory:hover,
+#cpu:hover,
+#wireplumber:hover,
+#backlight:hover,
+#battery:hover,
+#network:hover,
+#custom-updates:hover,
+#custom-wlogout:hover {
+    background-color: @white-background;
+}
+
+#custom-menu {
+    padding: 0px 11px 0px 6px;
+    font-size: 19px;
+}
+
+#custom-clipboard {
+    padding: 1px 11px 0px 9px;
+}
+
+#clock {
+    padding: 2px 2px 0px 2px;
+}
+
+#custom-screenshot {
+    padding: 1px 12px 0px 7px;
+}
+
+#memory {
+    padding: 1px 0px 0px 2px;
+}
+
+#cpu {
+    padding: 1px 0px 0px 2px;
+}
+
+#wireplumber {
+    padding: 1px 2px 0px 4px;
+}
+
+#backlight {
+    padding: 1px 2px 0px 0px;
+}
+
+@keyframes blink {
+    to {
+        background-color: transparent;
+    }
+}
+#battery {
+    padding: 1px 1px 0px 1px;
+    animation-name: none;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#battery.critical:not(.charging) {
+    animation-name: blink;
+    background-color: #ea0000;
+}
+
+#network {
+    padding: 1px 8px 0px 3px;
+}
+
+#custom-updates {
+    padding: 1px 11px 0px 10px;
+    font-size: 17px;
+}
+
+#custom-wlogout {
+    padding: 1px 11px 0px 6px;
+    font-size: 18px;
+}
