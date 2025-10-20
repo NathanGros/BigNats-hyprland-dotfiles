@@ -148,7 +148,7 @@ tooltip>box {
 
 #tray {
     opacity: 1;
-    padding: 3px 6px;
+    padding: 3px 5px;
     margin: 4px 0px;
     border-radius: 20px;
     transition: background-color 0.1s ease-in;
