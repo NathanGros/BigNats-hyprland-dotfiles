@@ -148,7 +148,7 @@
     "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
     "format-off": "",
     "tooltip-format-full": "Battery full",
-    "tooltip-format": "{time} ({capacity}%)",
+    "tooltip-format": "{capacity}% ({time})",
     "on-click": "power-options-gtk",
     "interval": 5,
     "min-length": 3,
