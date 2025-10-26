@@ -33,7 +33,7 @@
       "wireplumber",
       "backlight",
       "battery",
-      // "bluetooth",
+      "bluetooth",
       "network",
       "custom/updates",
       "custom/wlogout"

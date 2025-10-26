@@ -258,6 +258,7 @@ tooltip>box {
 #wireplumber,
 #backlight,
 #battery,
+#bluetooth,
 #network,
 #custom-updates,
 #custom-wlogout {
@@ -281,6 +282,7 @@ tooltip>box {
 #wireplumber:hover,
 #backlight:hover,
 #battery:hover,
+#bluetooth:hover,
 #network:hover,
 #custom-updates:hover,
 #custom-wlogout:hover {
@@ -336,6 +338,10 @@ tooltip>box {
 #battery.critical:not(.charging) {
     animation-name: blink;
     background-color: #ea0000;
+}
+
+#bluetooth {
+    padding: 1px 0px 0px 1px;
 }
 
 #network {
