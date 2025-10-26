@@ -57,7 +57,7 @@ window {
 
 #entry:selected {
     background-color: --wofi-color0;
-    margin: 5px 40px 5px 40px;
+    margin: 5px 10px 5px 40px;
 }
 
 #expander-box {
