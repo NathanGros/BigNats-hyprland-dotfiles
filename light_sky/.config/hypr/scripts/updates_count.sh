@@ -2,6 +2,7 @@
 
 # Get update updates_count
 if ! updates_arch="$(checkupdates | wc -l)"; then
+# if ! updates_arch="$(pacman -Sy; pacman -Qu | wc -l)"; then
     updates_arch=0
 fi
 if ! updates_aur="$(yay -Qum 2>/dev/null | wc -l)"; then
