@@ -1,17 +1,17 @@
 sort=-time
 
-font=Roboto 12
-background-color=#ffffffe9
+font=Sans 12
+background-color=#ffffffe0
 text-color=#000000e0
 width=400
 height=150
 outer-margin= 10,0,0,0
 margin= 7,0,7,0
 padding=5,10
-border-size=6
-border-color=#ffffff50
-border-radius=25
-progress-color=source #ffffff
+border-size=0
+border-color=#ffffff
+border-radius=22
+progress-color=source #2060e0
 icons=1
 max-icon-size=64
 icon-path=""
@@ -33,8 +33,7 @@ anchor=top-center
 [urgency=normal]
 
 [urgency=high]
-border-color=#ea000050
-background-color=#ea0000d0
+background-color=#fa0000e0
 text-color=#ffffff
 default-timeout=0
 
