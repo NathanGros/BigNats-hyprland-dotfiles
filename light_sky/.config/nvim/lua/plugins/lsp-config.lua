@@ -7,6 +7,7 @@ local lsps = {
 	"html",
 	"cssls",
 	"ruff",
+	"pyright",
 	"jdtls",
 	"ocamllsp",
 	"rust_analyzer",

@@ -25,6 +25,7 @@ Also please check the dependancies below.
 - neovim
 - oh-my-posh
 - pacman-contrib
+- ripgrep
 - sddm
 - swww
 - udiskie

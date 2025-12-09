@@ -20,19 +20,19 @@
         {
             "type": "host",
             "format": "{vendor} {family} ({name} {version})",
-            "key": " ",
+            "key": "  ",
             "keyColor": "31"
         },
         {
             "type": "monitor",
             "format": "{name} {width}x{height} @ {refresh-rate} Hz ({inch}in) - {manufacture-year}",
-            "key": " ",
+            "key": "  ",
             "keyColor": "31"
         },
         {
             "type": "cpu",
             "format": "{name} @ {freq-max} - {cores-logical} cores",
-            "key": "CPU ",
+            "key": "CPU",
             "keyColor": "33"
         },
         {
@@ -50,7 +50,7 @@
         {
             "type": "disk",
             "format": "{size-used} / {size-total} ({size-percentage}) - {filesystem} - {days-of-year} days old",
-            "key": "󰋊 ",
+            "key": "󰋊  ",
             "keyColor": "32"
         },
         {
@@ -60,36 +60,36 @@
         {
             "type": "os",
             "format": "{name} ({arch})",
-            "key": "OS",
+            "key": "OS ",
             "keyColor": "36"
         },
         {
             "type": "packages",
             "format": "{pacman} (pacman)",
-            "key": " ",
+            "key": "  ",
             "keyColor": "36"
         },
         {
             "type": "wm",
             "format": "{pretty-name} {version} ({protocol-name})",
-            "key": "WM",
+            "key": "WM ",
             "keyColor": "34"
         },
         {
             "type": "terminal",
             "format": "{pretty-name} {version}",
-            "key": " ",
+            "key": "  ",
             "keyColor": "35"
         },
         {
             "type": "shell",
             "format": "{pretty-name} {version}",
-            "key": "SH",
+            "key": "SH ",
             "keyColor": "35"
         },
         {
             "type": "colors",
-            "key": " ",
+            "key": "  ",
             "keyColor": "38",
             "symbol": "circle"
         }
