@@ -88,43 +88,43 @@ Also please check the dependancies below.
 ## Gallery
 
 ### Empty desktop
-![alt text](https://github.com/NathanGros/BigNats-hyprland-dotfiles/blob/main/beige_mono/gallery/empty_desktop.png)
+![empty desktop](https://github.com/NathanGros/BigNats-hyprland-dotfiles/blob/main/beige_mono/gallery/empty_desktop.png)
 
 ### Updates menu
 A waybar module that tells you how many pacman updates there are (each update is a dot) (i'm so proud of this lol)
 
-![alt text](https://github.com/NathanGros/BigNats-hyprland-dotfiles/blob/main/beige_mono/gallery/update.png)
+![updates](https://github.com/NathanGros/BigNats-hyprland-dotfiles/blob/main/beige_mono/gallery/update.png)
 
 ### Minimized windows
 A special workspace used to hide windows you don't need
 
-![alt text](https://github.com/NathanGros/BigNats-hyprland-dotfiles/blob/main/beige_mono/gallery/minimized_windows.png)
+![minimized windows](https://github.com/NathanGros/BigNats-hyprland-dotfiles/blob/main/beige_mono/gallery/minimized_windows.png)
 
 ### App Launcher
-![alt text](https://github.com/NathanGros/BigNats-hyprland-dotfiles/blob/main/beige_mono/gallery/app_menu.png)
+![app menu](https://github.com/NathanGros/BigNats-hyprland-dotfiles/blob/main/beige_mono/gallery/app_menu.png)
 
 ### Clipboard
-![alt text](https://github.com/NathanGros/BigNats-hyprland-dotfiles/blob/main/beige_mono/gallery/clipboard_menu.png)
+![clipboard](https://github.com/NathanGros/BigNats-hyprland-dotfiles/blob/main/beige_mono/gallery/clipboard_menu.png)
 
 ### Todo list
-![alt text](https://github.com/NathanGros/BigNats-hyprland-dotfiles/blob/main/beige_mono/gallery/todo_list.png)
+![todo list](https://github.com/NathanGros/BigNats-hyprland-dotfiles/blob/main/beige_mono/gallery/todo_list.png)
 
 ### Screenshot menu
-![alt text](https://github.com/NathanGros/BigNats-hyprland-dotfiles/blob/main/beige_mono/gallery/screenshot_menu.png)
+![screenshot menu](https://github.com/NathanGros/BigNats-hyprland-dotfiles/blob/main/beige_mono/gallery/screenshot_menu.png)
 
 ### Network menu
 I'm also very happy with this one
 
-![alt text](https://github.com/NathanGros/BigNats-hyprland-dotfiles/blob/main/beige_mono/gallery/network_menu.png)
+![network menu](https://github.com/NathanGros/BigNats-hyprland-dotfiles/blob/main/beige_mono/gallery/network_menu.png)
 
 ### Logout menu
-![alt text](https://github.com/NathanGros/BigNats-hyprland-dotfiles/blob/main/beige_mono/gallery/logout.png)
+![logout menu](https://github.com/NathanGros/BigNats-hyprland-dotfiles/blob/main/beige_mono/gallery/logout.png)
 
 ### Cava and clock
-![alt text](https://github.com/NathanGros/BigNats-hyprland-dotfiles/blob/main/beige_mono/gallery/cava_and_clock.png)
+![cava and clock](https://github.com/NathanGros/BigNats-hyprland-dotfiles/blob/main/beige_mono/gallery/cava_and_clock.png)
 
 ### Workflow
-![alt text](https://github.com/NathanGros/BigNats-hyprland-dotfiles/blob/main/beige_mono/gallery/editor.png)
+![workflow](https://github.com/NathanGros/BigNats-hyprland-dotfiles/blob/main/beige_mono/gallery/editor.png)
 
 ### Some packages
-![alt text](https://github.com/NathanGros/BigNats-hyprland-dotfiles/blob/main/beige_mono/gallery/fun_packages.png)
+![fun packages](https://github.com/NathanGros/BigNats-hyprland-dotfiles/blob/main/beige_mono/gallery/fun_packages.png)

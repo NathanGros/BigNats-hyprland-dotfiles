@@ -25,22 +25,22 @@ Make sure to have the following packages and utilities installed:
 ## Gallery
 
 ### Empty desktop
-![alt text](https://github.com/NathanGros/BigNats-hyprland-dotfiles/blob/main/blue_wave/screenshots/empty_desktop.png)
+![empty desktop](https://github.com/NathanGros/BigNats-hyprland-dotfiles/blob/main/blue_wave/screenshots/empty_desktop.png)
 
 ### Music setup
-![alt text](https://github.com/NathanGros/BigNats-hyprland-dotfiles/blob/main/blue_wave/screenshots/music.png)
+![music setup](https://github.com/NathanGros/BigNats-hyprland-dotfiles/blob/main/blue_wave/screenshots/music.png)
 
 ### Code
-![alt text](https://github.com/NathanGros/BigNats-hyprland-dotfiles/blob/main/blue_wave/screenshots/code.png)
+![code](https://github.com/NathanGros/BigNats-hyprland-dotfiles/blob/main/blue_wave/screenshots/code.png)
 
 ### App launcher
-![alt text](https://github.com/NathanGros/BigNats-hyprland-dotfiles/blob/main/blue_wave/screenshots/app_launcher.png)
+![app launcher](https://github.com/NathanGros/BigNats-hyprland-dotfiles/blob/main/blue_wave/screenshots/app_launcher.png)
 
 ### Easy updates
-![alt text](https://github.com/NathanGros/BigNats-hyprland-dotfiles/blob/main/blue_wave/screenshots/easy_updater.png)
+![updates](https://github.com/NathanGros/BigNats-hyprland-dotfiles/blob/main/blue_wave/screenshots/easy_updater.png)
 
 ### Logout menu
-![alt text](https://github.com/NathanGros/BigNats-hyprland-dotfiles/blob/main/blue_wave/screenshots/logout_menu.png)
+![logout menu](https://github.com/NathanGros/BigNats-hyprland-dotfiles/blob/main/blue_wave/screenshots/logout_menu.png)
 
 ### Clipboard menu
-![alt text](https://github.com/NathanGros/BigNats-hyprland-dotfiles/blob/main/blue_wave/screenshots/clipboard_menu.png)
+![clipboard menu](https://github.com/NathanGros/BigNats-hyprland-dotfiles/blob/main/blue_wave/screenshots/clipboard_menu.png)

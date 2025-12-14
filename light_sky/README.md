@@ -65,4 +65,4 @@ Also please check the dependancies below.
 ## Gallery
 
 ### Workflow
-![alt text](https://github.com/NathanGros/BigNats-hyprland-dotfiles/blob/main/light_sky/gallery/editor.png)
+![workflow](https://github.com/NathanGros/BigNats-hyprland-dotfiles/blob/main/light_sky/gallery/editor.png)
