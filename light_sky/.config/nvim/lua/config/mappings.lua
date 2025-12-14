@@ -9,6 +9,11 @@ map("n", "<leader>a", ":Alpha<CR>", { desc = "Open dashboard", silent = true })
 map("n", "<leader>ff", ":Telescope find_files<CR>", { desc = "Telescope find files", silent = true })
 map("n", "<leader>fr", ":Telescope oldfiles<CR>", { desc = "Telescope find recent files", silent = true })
 map("n", "<leader>fw", ":Telescope live_grep<CR>", { desc = "Telescope find word", silent = true })
+map("n", "<leader>fu", "$:Telescope lsp_references<CR>", { desc = "Telescope find usages", silent = true })
+
+-- References
+map("n", "<leader>ut", ":ReferencerToggle<CR>", { desc = "Toggle usages", silent = true })
+map("n", "<leader>uu", ":ReferencerUpdate<CR>", { desc = "Update usages", silent = true })
 
 -- NeoTree
 map("n", "<leader>e", ":Neotree reveal<CR>", { desc = "Focus Neotree", silent = true })
@@ -76,6 +81,9 @@ local lazygitterm = Terminal:new({
 map("n", "<leader>lg", function()
 	lazygitterm:toggle()
 end, { silent = true, desc = "Toggle lazygit" })
+
+-- GitBlame
+map("n", "<leader>gb", ":GitBlameToggle<CR>", { desc = "Toggle git blame", silent = true })
 
 -- UFO Folds
 map("n", "zR", require("ufo").openAllFolds)

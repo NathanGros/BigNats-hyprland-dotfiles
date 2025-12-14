@@ -59,6 +59,8 @@ Also please check the dependancies below.
 - tty-clock
 - unimatrix-git
 - zoxide (absolute banger)
+- zsh-autosuggestions
+- zsh-syntax-highlighting
 
 ## Gallery
 
