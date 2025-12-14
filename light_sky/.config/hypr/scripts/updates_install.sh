@@ -39,12 +39,3 @@ echo " "
 echo    "                                   Press ENTER to exit                                    "
 read
 tput cnorm
-
-
-
-
-echo -e "            "
-echo -e "      █     "
-echo -e "    ████    "
-echo -e "   ███    "
-echo -e "  ███  ███  "

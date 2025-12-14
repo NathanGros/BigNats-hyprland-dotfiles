@@ -20,7 +20,7 @@ if [ -z "$choice1" ]; then
     exit 0
 fi
 mode="screen"
-waittime=0.3
+waittime=1
 case $choice1 in 
     fullscreen)
         mode="screen"
