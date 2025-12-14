@@ -38,9 +38,9 @@ alias locate='locate -i'
 alias bulkrename='cp ~/.config/hypr/scripts/bulk_rename.sh .; ./bulk_rename.sh; rm bulk_rename.sh'
 function o() {zathura "$@" & disown}
 function cddir() {
-  local dir
-  dir=$(locate "$@" | fzf) || return
-  cd "$dir"
+    local dir
+    dir=$(locate "$@" | fzf) || return
+    cd "$dir"
 }
 function compress() {ffmpeg -i "$@" -fs 8MB -c:v libx264 -preset fast -crf 28 -c:a aac -b:a 96k "~/Videos/compressed_video.mp4"}
 
