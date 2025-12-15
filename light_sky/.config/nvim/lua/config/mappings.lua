@@ -1,6 +1,9 @@
 local map = vim.keymap.set
 
 map("n", "<esc>", ":noh<CR>", { desc = "Clear highlights", silent = true })
+map({ "n", "v" }, "", function()
+  vim.cmd("popup PopUp")
+end, { silent = true })
 
 -- Alpha dashboard
 map("n", "<leader>a", ":Alpha<CR>", { desc = "Open dashboard", silent = true })
