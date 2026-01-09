@@ -1,17 +1,31 @@
 # see man 5 zathurarc
 
 set selection-clipboard clipboard
+set scroll-step 250
 
-set default-bg \#d0d0d0
+# colors
 set completion-bg \#e0e0e0
 set completion-fg \#000000
+# set completion-group-bg \#e0e0e0
+# set completion-group-fg \#000000
 set completion-highlight-bg \#000000
 set completion-highlight-fg \#ffffff
+set default-bg \#d0d0d0
+set default-fg \#000000
 set inputbar-bg \#e0e0e0
 set inputbar-fg \#000000
 set notification-bg \#e0e0e0
 set notification-fg \#000000
-set notification-error-bg \#ca7081
+set notification-error-bg \#FF0000
 set notification-error-fg \#ffffff
+set notification-warning-bg \#FFB030
+set notification-warning-fg \#000000
 set statusbar-bg \#e0e0e0
 set statusbar-fg \#000000
+set highlight-active-color rgba(0,188,0,0.5)
+set highlight-color rgba(81,113,255,0.4)
+set highlight-fg rgba(0,0,0,0.5)
+set index-active-bg \#5171ff
+set index-active-fg \#ffffff
+set index-bg \#ffffff
+set index-fg \#000000
