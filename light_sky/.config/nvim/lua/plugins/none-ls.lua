@@ -24,7 +24,7 @@ return {
 				null_ls.builtins.diagnostics.ruff,
 				-- Java
 				null_ls.builtins.formatting.google_java_format,
-				null_ls.builtins.diagnostics.checkstyle,
+				null_ls.builtins.diagnostics.sonarlint_language_server,
 				-- OCaml
 				null_ls.builtins.formatting.ocamlformat,
 				-- null_ls.builtins.diagnostics.ocamllsp,

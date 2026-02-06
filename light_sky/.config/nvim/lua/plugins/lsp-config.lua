@@ -11,6 +11,8 @@ local lsps = {
 	"jdtls",
 	"ocamllsp",
 	"rust_analyzer",
+    "sonarlint",
+    "jsonls",
 }
 
 return {
