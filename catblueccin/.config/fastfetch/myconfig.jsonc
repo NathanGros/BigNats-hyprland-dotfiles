@@ -1,0 +1,99 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "type": "file",
+        "source": "~/.config/fastfetch/archlinux-logo.txt",
+        "color": {"1": "blue"},
+        "padding": {
+            "top": 4,
+            "left": 3
+        }
+    },
+    "display": {
+        "separator": "   "
+    },
+    "modules": [
+        {
+            "type": "host",
+            "format": "{vendor} {family} ({name} {version})",
+            "key": "  ",
+            "keyColor": "31"
+        },
+        {
+            "type": "monitor",
+            "format": "{name} {width}x{height} @ {refresh-rate} Hz ({inch}in) - {manufacture-year}",
+            "key": "  ",
+            "keyColor": "31"
+        },
+        {
+            "type": "cpu",
+            "format": "{name} @ {freq-max} - {cores-logical} cores",
+            "key": "CPU",
+            "keyColor": "33"
+        },
+        {
+            "type": "gpu",
+            "format": "{vendor} {name} @ {frequency}",
+            "key": "GPU",
+            "keyColor": "33"
+        },
+        {
+            "type": "memory",
+            "format": "{used} / {total} ({percentage})",
+            "key": "RAM",
+            "keyColor": "32"
+        },
+        {
+            "type": "disk",
+            "format": "{size-used} / {size-total} ({size-percentage}) - {filesystem} - {days-of-year} days old",
+            "key": "󰋊  ",
+            "keyColor": "32"
+        },
+        {
+            "type": "custom",
+            "format": "{#38}{#1}─────────────────────────────────────────────────────────{#}"
+        },
+        {
+            "type": "os",
+            "format": "{name} ({arch})",
+            "key": "OS ",
+            "keyColor": "36"
+        },
+        {
+            "type": "uptime",
+            "format": "{formatted}",
+            "key": "  ",
+            "keyColor": "36"
+        },
+        {
+            "type": "packages",
+            "format": "{pacman} (pacman)",
+            "key": "  ",
+            "keyColor": "36"
+        },
+        {
+            "type": "wm",
+            "format": "{pretty-name} {version} ({protocol-name})",
+            "key": "WM ",
+            "keyColor": "34"
+        },
+        {
+            "type": "terminal",
+            "format": "{pretty-name} {version}",
+            "key": "  ",
+            "keyColor": "35"
+        },
+        {
+            "type": "shell",
+            "format": "{pretty-name} {version}",
+            "key": "SH ",
+            "keyColor": "35"
+        },
+        {
+            "type": "colors",
+            "key": "  ",
+            "keyColor": "38",
+            "symbol": "circle"
+        }
+    ]
+}

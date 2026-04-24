@@ -1,0 +1,51 @@
+{
+	"layer": "top",
+	"position": "top",
+	"height": 44,
+	"margin-top": 6,
+	"margin-bottom": 0,
+	"margin-left": 0,
+	"margin-right": 0,
+	"spacing": 0,
+	"reload_style_on_change": true,
+	"fixed-center": true,
+
+	"include": [
+		"~/.config/waybar/modules.json"
+	],
+
+	"modules-left": [
+		"custom/menu",
+		"hyprland/workspaces",
+		"tray",
+		"wlr/taskbar"
+	],
+	"modules-center": [
+		"custom/clipboard",
+		"clock",
+		"custom/screenshot"
+	],
+	"modules-right": [
+		"custom/separatorleft",
+		"memory",
+		"custom/separator",
+		"cpu",
+		"custom/separator",
+		"battery",
+		"custom/separatorright",
+
+		"custom/separatorleft",
+		"wireplumber",
+		"custom/separator",
+		"backlight",
+		"custom/separatorright",
+
+		"custom/separatorleft",
+		"network",
+		"custom/separator",
+		"custom/updates",
+		"custom/separatorright",
+
+		"custom/wlogout"
+	]
+}

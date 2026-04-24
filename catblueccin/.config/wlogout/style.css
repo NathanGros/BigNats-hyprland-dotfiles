@@ -1,0 +1,100 @@
+* {
+    background-image: none;
+    font-size: 17px;
+    font-family: Roboto;
+}
+
+window {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+button {
+    color: rgba(0, 0, 0, 0.8);
+    background-color: #1e1e2e;
+    outline-style: none;
+	border: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30%;
+    border-radius: 0px;
+    box-shadow: none;
+    text-shadow: none;
+    transition: all 0.2s ease-in-out;
+    margin : 50px 0px 50px 0px;
+}
+
+#lock {
+    background-image: image(url("icons/lock_light.png"));
+    border-radius: 20px 0px 0px 20px;
+    border-top: 2px solid #89b4fa;
+    border-bottom: 2px solid #89b4fa;
+    border-left: 2px solid #89b4fa;
+}
+
+#logout {
+    background-image: image(url("icons/logout_light.png"));
+    padding: 0px 20px;
+    border-top: 2px solid #89b4fa;
+    border-bottom: 2px solid #89b4fa;
+}
+
+#shutdown {
+    background-image: image(url("icons/shutdown_light.png"));
+    padding: 0px 20px;
+    border-top: 2px solid #89b4fa;
+    border-bottom: 2px solid #89b4fa;
+}
+
+#reboot {
+    background-image: image(url("icons/reboot_light.png"));
+    border-radius: 0px 20px 20px 0px;
+    border-top: 2px solid #89b4fa;
+    border-bottom: 2px solid #89b4fa;
+    border-right: 2px solid #89b4fa;
+}
+
+button:focus {
+    background-color: #89b4fa;
+    background-size: 35%;
+}
+
+button:hover {
+    background-color: #89b4fa;
+    background-size: 40%;
+    border-radius: 30px;
+    margin : 10px 0px 10px 0px;
+}
+
+#lock:focus {
+    background-image: image(url("icons/lock.png"));
+}
+
+#logout:focus {
+    background-image: image(url("icons/logout.png"));
+}
+
+#shutdown:focus {
+    background-image: image(url("icons/shutdown.png"));
+}
+
+#reboot:focus {
+    background-image: image(url("icons/reboot.png"));
+}
+
+#lock:hover {
+    background-image: image(url("icons/lock.png"));
+    border-radius: 30px;
+}
+
+#logout:hover {
+    background-image: image(url("icons/logout.png"));
+}
+
+#shutdown:hover {
+    background-image: image(url("icons/shutdown.png"));
+}
+
+#reboot:hover {
+    background-image: image(url("icons/reboot.png"));
+    border-radius: 30px;
+}
