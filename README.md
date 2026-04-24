@@ -6,11 +6,14 @@ I have made a few different although similar rices over the years, and they are 
 ## Previews
 Here are some previews, ordered from newest to oldest rice.
 
+### Catblueccin
+![catblueccin](https://github.com/NathanGros/BigNats-hyprland-dotfiles/blob/main/catblueccin/gallery/workflow.png)
+
 ### Light sky
-![alt text](https://github.com/NathanGros/BigNats-hyprland-dotfiles/blob/main/light_sky/gallery/editor.png)
+![light ski](https://github.com/NathanGros/BigNats-hyprland-dotfiles/blob/main/light_sky/gallery/editor.png)
 
 ### Beige mono
-![alt text](https://github.com/NathanGros/BigNats-hyprland-dotfiles/blob/main/beige_mono/gallery/editor.png)
+![beige mono](https://github.com/NathanGros/BigNats-hyprland-dotfiles/blob/main/beige_mono/gallery/editor.png)
 
 ### Blue wave
-![alt text](https://github.com/NathanGros/BigNats-hyprland-dotfiles/blob/main/blue_wave/screenshots/code.png)
+![blue wave](https://github.com/NathanGros/BigNats-hyprland-dotfiles/blob/main/blue_wave/screenshots/code.png)
