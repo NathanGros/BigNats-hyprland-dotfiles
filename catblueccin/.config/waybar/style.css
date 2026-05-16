@@ -331,6 +331,10 @@ tooltip>box {
 	animation-name: blink;
 	background-color: #f38ba8;
 }
+#battery.warning:not(.charging) {
+	animation-name: blink;
+	background-color: #f9e2af;
+}
 
 
 #wireplumber {

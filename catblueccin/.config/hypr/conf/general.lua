@@ -1,0 +1,22 @@
+hl.config({general = {
+	border_size = 0,
+	gaps_in = 10,
+	gaps_out = {top=11, right=20, bottom=20, left=20},
+	float_gaps = 0,
+	gaps_workspaces = 0,
+	col = {
+		inactive_border = "0xff444444",
+		active_border = "0xffffffff",
+		nogroup_border = "0xffffaaff",
+		nogroup_border_active = "0xffff00ff",
+	},
+	layout = "scrolling",
+	no_focus_fallback = false,
+	resize_on_border = true,
+	extend_border_grab_area = 20,
+	hover_icon_on_border = true,
+	allow_tearing = false,
+	resize_corner = 0,
+	modal_parent_blocking = true,
+	locale = "",
+}})

@@ -6,18 +6,18 @@
 
 {
     "label" : "logout",
-    "action" : "hyprctl dispatch exit 0",
+    "action" : "hyprshutdown -t 'Logging out...'",
     "keybind" : "e"
 }
 
 {
     "label" : "shutdown",
-    "action" : "systemctl poweroff",
+    "action" : "hyprshutdown -t 'Shutting down...' --post-cmd 'systemctl poweroff'",
     "keybind" : "s"
 }
 
 {
     "label" : "reboot",
-    "action" : "systemctl reboot",
+    "action" : "hyprshutdown -t 'Rebooting...' --post-cmd 'systemctl reboot'",
     "keybind" : "r"
 }

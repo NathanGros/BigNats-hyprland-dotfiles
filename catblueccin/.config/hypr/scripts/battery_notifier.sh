@@ -14,7 +14,6 @@
 
 threshold_low=20
 threshold_critical=10
-wait_time=30
 
 
 ##########
@@ -25,8 +24,10 @@ warnlevel=0
 prev_warnlevel=0
 is_notification_on=0
 notification_id=0
+wait_time=30
+short_wait_time=5
 while true; do
-    is_charging=$(cat /sys/class/power_supply/ACAD/online)
+	is_charging=$(cat /sys/class/power_supply/ACAD/online)
 
 	# Reset / do nothing if charging
 	if [ "$is_charging" -eq 1 ]; then
@@ -36,13 +37,17 @@ while true; do
 		fi
 		warnlevel=0
 		prev_warnlevel=0
-		sleep "$wait_time"
+		if [ $is_notification_on -eq 1 ]; then
+			sleep $short_wait_time
+		else
+			sleep $wait_time
+		fi
 		continue
 	fi
 
 	# Get warning level
-    bat_lvl=$(cat /sys/class/power_supply/BAT1/capacity)
-    if [ "$bat_lvl" -le $threshold_critical ]; then
+	bat_lvl=$(cat /sys/class/power_supply/BAT1/capacity)
+	if [ "$bat_lvl" -le $threshold_critical ]; then
 		warnlevel=2
 	elif [ "$bat_lvl" -le $threshold_low ]; then
 		warnlevel=1
@@ -63,5 +68,9 @@ while true; do
 	fi
 
 	prev_warnlevel=$warnlevel
-    sleep "$wait_time"
+	if [ $is_notification_on -eq 1 ]; then
+		sleep $short_wait_time
+	else
+		sleep $wait_time
+	fi
 done

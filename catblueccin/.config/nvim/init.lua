@@ -21,6 +21,14 @@ vim.api.nvim_create_autocmd('TextYankPost', {
         vim.hl.on_yank()
     end,
 })
+-- Disable broken treesitter for markdown
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = 'markdown',
+  callback = function()
+    vim.treesitter.stop(0)  -- Disable Tree-sitter for this buffer
+    -- vim.cmd('set syntax=markdown')  -- Enable built-in Vim syntax
+  end,
+})
 
 -- USER COMMANDS: DEFINE CUSTOM COMMANDS
 --

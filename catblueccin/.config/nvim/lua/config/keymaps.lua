@@ -25,19 +25,26 @@ map('n', '<leader>s', ':vsp<CR>', { desc = "Open vertical split", silent = true 
 map("n", "<tab>", function ()
 	require('buffer_manager.ui').toggle_quick_menu()
 end, { desc = "Open buffers list" })
+map("n", "<M-tab>", function ()
+	require('buffer_manager.ui').toggle_quick_menu()
+end, { desc = "Open buffers list" })
 
 -- LSP
 map("n", "<leader>li", vim.lsp.buf.hover, { desc = "Display Information", silent = true })
 map("n", "<leader>ld", vim.lsp.buf.definition, { desc = "Go to definition", silent = true })
-map("n", "<leader>la", vim.lsp.buf.code_action, { desc = "Code actions", silent = true })
 map("n", "<leader>le", vim.diagnostic.goto_next, { desc = "Next error", silent = true })
 map("n", "<leader>lf", vim.lsp.buf.format, { desc = "Format file", silent = true })
+vim.keymap.set({ "n", "x" }, "<leader>la", function()
+	require("tiny-code-action").code_action()
+end, { desc = "Code actions", noremap = true, silent = true })
 
 -- Terminal
 map("n", "<leader>t", ":terminal<CR>", { desc = "Open terminal", silent = true })
 map("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Close terminal", silent = true })
 vim.keymap.set("t", "<C-\\>", [[<C-\><C-n>]])
 
+-- Markdown preview
+map("n", "<leader>mp", ":LivePreview start<CR>", { desc = "Live markdown preview", silent = true })
 
 
 

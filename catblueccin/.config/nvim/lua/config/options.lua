@@ -7,7 +7,7 @@ vim.o.smartindent = true
 vim.o.smarttab = true
 vim.o.tabstop = 4
 
-vim.o.fillchars = "foldopen:,foldclose:"
+vim.o.fillchars = "foldopen:,foldclose:,eob: "
 vim.o.foldcolumn = "1"
 vim.o.foldmethod = "indent"
 -- vim.o.foldmethod = "syntax"
@@ -18,7 +18,7 @@ vim.o.list = true
 vim.o.listchars = "tab:│ ,leadmultispace:│   ,trail:-,extends:󰄾,precedes:󰄽,nbsp:+"
 
 vim.o.number = true
-vim.o.signcolumn = "number"
+vim.o.signcolumn = "yes:1"
 
 vim.o.spell = false
 vim.o.spellfile = "~/.config/nvim/spellfile.utf-8.add"

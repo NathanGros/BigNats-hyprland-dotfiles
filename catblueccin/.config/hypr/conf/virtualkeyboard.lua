@@ -1,0 +1,4 @@
+hl.config({input = {virtualkeyboard = {
+	share_states = 2,
+	release_pressed_on_close = false,
+}}})
