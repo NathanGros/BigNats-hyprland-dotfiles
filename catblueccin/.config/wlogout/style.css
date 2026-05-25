@@ -38,6 +38,13 @@ button {
     border-bottom: 2px solid #89b4fa;
 }
 
+#suspend {
+    background-image: image(url("icons/suspend_light.png"));
+    padding: 0px 20px;
+    border-top: 2px solid #89b4fa;
+    border-bottom: 2px solid #89b4fa;
+}
+
 #shutdown {
     background-image: image(url("icons/shutdown_light.png"));
     padding: 0px 20px;
@@ -73,6 +80,10 @@ button:hover {
     background-image: image(url("icons/logout.png"));
 }
 
+#suspend:focus {
+    background-image: image(url("icons/suspend.png"));
+}
+
 #shutdown:focus {
     background-image: image(url("icons/shutdown.png"));
 }
@@ -88,6 +99,10 @@ button:hover {
 
 #logout:hover {
     background-image: image(url("icons/logout.png"));
+}
+
+#suspend:hover {
+    background-image: image(url("icons/suspend.png"));
 }
 
 #shutdown:hover {

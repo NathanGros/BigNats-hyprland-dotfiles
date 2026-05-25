@@ -11,6 +11,12 @@
 }
 
 {
+    "label" : "suspend",
+    "action" : "systemctl suspend",
+    "keybind" : "p"
+}
+
+{
     "label" : "shutdown",
     "action" : "hyprshutdown -t 'Shutting down...' --post-cmd 'systemctl poweroff'",
     "keybind" : "s"
